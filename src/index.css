@@ -57,12 +57,11 @@ label{
 
 form{
   margin: 0 auto;
-  max-width: 320px;
+  max-width: 250px;
 }
 
-input[type=text], input[type=password]{
+input[type=text], input[type=password], input[type=email]{
   border-radius: 6px;
   border:0;
   padding: 3px 2px;
 }
-

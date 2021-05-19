@@ -4,7 +4,7 @@ const Login = () => {
     return (
         <div>
             <form>
-                <Header title="Log in" size={75} family={'Thasadith'} />
+                <Header title=" Log in" size={75} family={'Thasadith'} />
                 <div>
                     <label>Username</label>
                     <input type='text' />

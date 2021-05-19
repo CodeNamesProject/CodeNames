@@ -3,19 +3,25 @@ import Header from '../components/Header'
 const Signup = () => {
     return (
         <div>
-            <form>
-                <Header title="Log in" size={75} family={'Thasadith'} />
+            <form className="container">
+            <Header title="Sign up" size={75} family={'Thasadith'} />
                 <div>
-                    <label>Username</label>
+                    <label>First Name</label>
                     <input type='text' />
+
+                    <label>User Name</label>
+                    <input type='text'/>
                 </div>
                 <br/>
                 <div>
+                    <label>LastName</label>
+                    <input type='text' />
+
                     <label>Password</label>
                     <input type='password' />
                 </div>
                 <br/>
-                <Button text='Log in' width={100} />
+                <Button text='Sign up' width={100} nav="/login" />
             </form>
         </div>
     )
