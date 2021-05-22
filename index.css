@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@700&display=swap');
+
+body{
+  background: #340330;
+  /*background-image: url(main_page.jpg);
+  background-repeat: no-repeat;*/
+}
+
+
+
+.container{
+  text-align: center;
+}
+
+.header{
+  /*font-family: Tulpen One;*/
+  color: #FFFFFF;
+  /*font-size: 200px;*/
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+  line-height: 0.5em;
+}
+
+.title{
+  margin-top:100px;
+  margin-bottom:40px;
+}
+
+.btn{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: auto;
+  /*width: 150px;*/
+  height: 37px;
+  background: #46497D;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  font-size: 17px;
+  font-family: Varela;
+}
+
+/*
+.containerlog{
+  display: block;
+  text-align: center;
+  border: 5px solid #260023;
+  background-color: #260023;
+  border-radius: 7px;
+  margin: 80px 400px;
+} */
+
+label{
+  color:#FFFFFF;
+}
+
+form{
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+input[type=text], input[type=password], input[type=email]{
+  border-radius: 6px;
+  border:0;
+  padding: 3px 2px;
+}
+/* HomePage */
+.account{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.rules{
+  position: relative;
+  margin: 5% 28%;
+  padding: 10px;
+  width: 600px;
+  object-position: center top;
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: purple;
+}
+/* /Homepage */
+
+/* CreateRoom */
+.crroom{
+  background-color: purple;
+  line-height: 6.4em;
+  margin-top: 10%;
+  width: 100% ;
+  text-align: center;
+  font-size: 18px;
+}
+.filter-switch label {
+  cursor: pointer;
+}
+.filter-switch-item input:checked + label {
+  color: inherit;
+}
+.filter-switch-item input:not(:checked) + label {
+  --bg-opacity: 0;
+  box-shadow: none;
+}
+.sr-only{
+  -webkit-appearance: none;
+}
+li{
+  display: inline;
+}
+/* /CreateRoom*/
+
+/* GameRoom */
+.team{
+  color: #FFFFFF;
+}
+.username{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.player{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.team1{
+  background-color: #46497D;
+}
+
+.team2{
+  background-color: #46497D;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  grid-gap: 50px;
+
+}
+
+.item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* /GameRoom*/
+
+/* Account */
+.accountpage{
+  background-color: #46497D;
+  padding: 16px;
+}
+/* /Account */
+
+
+
+
