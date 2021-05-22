@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Thasadith:wght@700&display=swap');
 
 body{
-  background: #340330;
+  /*background: #340330;*/
+  background-image: url(cover.png);
   margin: 0 auto 0 auto;  
   width:100%; 
+  height: 100%;
   text-align:center;
   margin: 20px 0px 20px 0px;  
 
@@ -42,30 +44,6 @@ p{
   background:#2CC06B; 
 }
 
-/*form{
-  margin: 0 auto;
-  max-width: 250px;
-  margin-top: -50px;
-}
-
-.content{
-  display: flex;
-  flex-wrap: wrap;
-  margin: -10px;
-}
-
-.content>*{
-  flex: 1;
-  margin: 10px;
-}
-
-input[type=text], input[type=password], input[type=email]{
-  border-radius: 6px;
-  border:0;
-  padding: 3px 2px;
-}
-*/
-
 .box{
   background:#260023;
   box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
@@ -78,7 +56,7 @@ input[type=text], input[type=password], input[type=email]{
 label{
   color:#FFFFFF;
 }
-.email{
+.input{
   background:#ecf0f1;
   border: #ccc 1px solid;
   border-bottom: #ccc 2px solid;
@@ -90,4 +68,52 @@ label{
 }
 .content{
   margin-top: -20px;
+}
+
+header,
+nav,
+article,
+aside,
+footer {
+    border: 1px solid #000;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-width: 1000px;
+  height: 100%;
+  margin: -20px 0;
+}
+
+.h {
+  height: 60px;
+  color:white;
+}
+
+main {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 550px;
+}
+
+main > nav {
+  width: 300px;
+}
+
+main > article {
+  flex: auto;
+}
+
+main > aside {
+  width: 300px;
+}
+
+.cards{
+  display: flexbox;
+  flex-wrap: wrap;
+  
 }

@@ -10,13 +10,13 @@ const Login = () => {
                 <div>
                     <label>Username</label>
                     <br/>
-                    <input type='text' className="email"/>
+                    <input type='text' className='input'/>
                 </div>
                 <br/>
                 <div>
                     <label>Password</label>
                     <br/>
-                    <input type='password' className="email"/>
+                    <input type='password' className='input'/>
                 </div>
                 <br/>
                 <Button text='Log in' width={253} />

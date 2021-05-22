@@ -36,31 +36,31 @@ class Signup extends Component {
                     <div>
                         <label>First Name</label>
                         <br/>
-                        <input type='text' className="email" value={firstname} name='firstname' onChange={this.handleInputChange}  />
+                        <input type='text' className='input' value={firstname} name='firstname' onChange={this.handleInputChange}  />
                     </div>
                     <br/>
                     <div>
                         <label>Last Name</label>
                         <br/>
-                        <input type='text' className="email" value={lastname} name='lastname' onChange={this.handleInputChange} />
+                        <input type='text' className='input' value={lastname} name='lastname' onChange={this.handleInputChange} />
                     </div>
                     <br/>
                     <div>
                         <label>User Name</label>
                         <br/>
-                        <input type='text' className="email" value={username} name='username' onChange={this.handleInputChange}/>
+                        <input type='text' className='input' value={username} name='username' onChange={this.handleInputChange}/>
                     </div>
                     <br/>
                     <div>
                         <label>Email</label>
                         <br/>
-                        <input type='email' className="email" value={email} name='email' onChange={this.handleInputChange}/>
+                        <input type='email' className='input' value={email} name='email' onChange={this.handleInputChange}/>
                     </div>
                     <br/>
                     <div>
                         <label>Password</label>
                         <br/>
-                        <input type='password' className="email" value={password} name='password' onChange={this.handleInputChange}/>
+                        <input type='password' className='input' value={password} name='password' onChange={this.handleInputChange}/>
                     </div>
                 </div>
                 <br/>
