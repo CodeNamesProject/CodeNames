@@ -1,23 +1,28 @@
 import Button from '../components/Button'
 import Header from '../components/Header'
 const Login = () => {
+
     return (
-        <div>
-            <form>
+        <form>
+        <div className="box">
+            
                 <Header title=" Log in" size={75} family={'Thasadith'} />
                 <div>
                     <label>Username</label>
-                    <input type='text' />
+                    <br/>
+                    <input type='text' className="email"/>
                 </div>
                 <br/>
                 <div>
                     <label>Password</label>
-                    <input type='password' />
+                    <br/>
+                    <input type='password' className="email"/>
                 </div>
                 <br/>
-                <Button text='Log in' width={100} />
-            </form>
+                <Button text='Log in' width={253} />
+            
         </div>
+        </form>
     )
 }
 
