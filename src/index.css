@@ -73,6 +73,7 @@ label{
 
 /* HomePage */
 
+
 .account{
   position: absolute;
   top: 8px;
@@ -272,19 +273,60 @@ footer {
 .Team1{
   border: none;
   width: 70%;
+  height: 170px;
   color: #D4462A;
   background-color: #981414;
   border-radius: 6px;
   box-shadow:22px 22px 25px 22px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   font-family: Thasadith;
+  margin: 30px;
 }
 nav img{
   border-radius: 6px;
   box-shadow: 0px 15px 10px 0px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  margin-left:-70px;
+  margin-top: 5px;
 }
+
+nav h2{
+  float: right;
+  color:#FFFFFF;
+  margin-top: 30px;
+}
+
 .player1 h6{
   font-size: 13px;
+  margin-top: 20px;
+  margin-left: -140px;
 }
+.Team2{
+  border: none;
+  width: 70%;
+  height: 170px;
+  color: #10B4E2;
+  background-color: #0B7C9C;
+  border-radius: 6px;
+  box-shadow:22px 22px 25px 22px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  font-family: Thasadith;
+  margin: 30px;
+}
+aside img{
+  border-radius: 6px;
+  box-shadow: 0px 15px 10px 0px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  margin-right: -70px;
+  margin-top: 5px;
+}
+aside h2{
+  float: left;
+  color:#FFFFFF;
+  margin-top: 30px;
+}
+.player2 h6{
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: -140px;
+}
+
 .cards{
   display: flexbox;
   padding: 30px;
