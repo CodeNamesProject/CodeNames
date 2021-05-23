@@ -19,7 +19,7 @@ const Login = () => {
                     <input type='password' className='input'/>
                 </div>
                 <br/>
-                <Button text='Log in' width={253} />
+                <Button text='Log in' width={253} nav='/homepage' />
             
         </div>
         </form>

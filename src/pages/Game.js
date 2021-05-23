@@ -9,7 +9,16 @@ const Game = () => {
 
             <main>
                 <nav>
-                    Navigation
+                    <div className="Team1">
+                            <div>
+                                <img src="https://boardgametree.com/wp-content/uploads/2019/04/codenames-2.jpg" alt="character" width="110" />
+                                9
+                            </div>
+                            <div className="player1">
+                                <h6>Operative</h6>
+                                <h6>Spymaster</h6>
+                            </div>
+                    </div>
                 </nav>
                 <article>
                     <div className="cards">
@@ -54,6 +63,9 @@ const Game = () => {
                     Sidebar
                 </aside>
             </main>
+            <footer>
+                Footer
+            </footer>
         </div>
     )
 }
