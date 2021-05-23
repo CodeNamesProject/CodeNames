@@ -1,5 +1,4 @@
-import React from 'react'
-
+import Card from '../components/Card'
 const Game = () => {
     return (
         <div className="body">
@@ -23,39 +22,39 @@ const Game = () => {
                 <article>
                     <div className="cards">
                         <div>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
+                        <Card word="Planet" />
+                        <Card word="England" />
+                        <Card word="Cat" />
+                        <Card word="Dress" />
+                        <Card word="Pie" />
                         </div>
                         <div>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
+                        <Card word="Frost" />
+                        <Card word="Cell" />
+                        <Card word="Server" />
+                        <Card word="Apple" />
+                        <Card word="Mug" />
                         </div>
                         <div>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
+                        <Card word="Washington" />
+                        <Card word="War" />
+                        <Card word="Trip" />
+                        <Card word="Wel" />
+                        <Card word="Temple" />
                         </div>
                         <div>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
+                        <Card word="Point" />
+                        <Card word="Beat" />
+                        <Card word="Ground" />
+                        <Card word="Post" />
+                        <Card word="Cross" />
                         </div>
                         <div>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
-                        <button>Card</button>
+                        <Card word="Hotel" />
+                        <Card word="Italy" />
+                        <Card word="Wave" />
+                        <Card word="Bank" />
+                        <Card word="Soul" />
                         </div>
                     </div>
                 </article>

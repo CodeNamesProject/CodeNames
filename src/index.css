@@ -331,4 +331,12 @@ aside h2{
   display: flexbox;
   padding: 30px;
 }
+
+article button{
+  width: 110px;
+  height: 80px;
+  border: 2px solid #352E1E;
+  border-radius: 8px;
+  background-color: #F9BB5F;
+}
 /* Game*/
