@@ -24,7 +24,7 @@ const Game = () => {
                     </div>
                 </nav>
                 <article>
-                    <div>
+                    <div className="cardbox">
                         <div>
                         <Card word="Planet" />
                         <Card word="England" />
