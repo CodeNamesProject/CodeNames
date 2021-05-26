@@ -1,0 +1,213 @@
+header,
+nav,
+article,
+aside,
+footer {
+    border: 1px solid #000;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-width: 1000px;
+  height: 100%;
+  margin: -20px 0;
+  /*background-image: url(red_cover.jpg);*/
+  /*background: radial-gradient(circle at 50% 50%, rgb(231, 102, 60) 0%, rgb(72, 12, 2) 100%);*/
+  background: radial-gradient(circle at 50% 50%, rgb(166, 53, 8) 0%, rgb(72, 12, 2) 100%);
+
+}
+
+.h {
+  height: 80px;
+  color:white;
+}
+
+main {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 550px;
+}
+
+main > nav {
+  width: 300px;
+}
+
+main > article {
+  flex: auto;
+}
+
+main > aside {
+  width: 300px;
+}
+
+footer {
+  height: 59px;
+}
+/* Card 1 */
+.Team1{
+  background-color: #981414;
+  /*color: #D4462A;*/
+  border-radius: 6px;
+  box-shadow:7px 7px 4px 1px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  font-family: Thasadith;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.up1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img{
+  margin-top: 5px;
+  border-radius: 6px;
+  box-shadow:4px 4px 3px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.score1{
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.player1{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+.player1 h6{
+  font-size: 13px;
+  align-self: flex-start;
+  color: #cf6550;
+}
+
+/* Radio button */
+.rad-label {
+  display: flex;
+  cursor: pointer;
+}
+.rad-text{
+  margin-right: 10px;
+}
+.rad-label:hover,
+.rad-label:focus-within {
+  background: hsla(0, 0%, 80%, .14);
+}
+
+.rad-input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 17px;
+  height: 17px;
+  border-radius: 100px;
+  background: #46497D;
+}
+
+.rad-design::before {
+  content: '';
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.0);
+  transition: .3s;
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+
+.rad-input:checked~.rad-text {
+  color: hsl(0, 0%, 40%);
+}
+/* Radio button */
+
+/* Card 1 */
+
+/* Card 2 */
+.Team2{
+  background-color: #0B7C9C;
+  /*color: #10B4E2;*/
+  border-radius: 6px;
+  box-shadow:7px 7px 4px 1px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  font-family: Thasadith;
+  width: 70%;
+  margin: 0 auto;
+}
+.up2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+aside img{
+  margin-top: 5px;
+  border-radius: 6px;
+  box-shadow:4px 4px 3px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.score2{
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.player2{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+.player2 h6{
+  font-size: 13px;
+  align-self: flex-start;
+  color: #5fc3df;
+}
+/* Card 2 */
+
+.gamelog{
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: transparent;
+tab-size: 4;
+line-height: inherit;
+font-family: Nunito,sans-serif;
+font-size: 16px;
+user-select: none;
+box-sizing: border-box;
+border: 0 solid #e5e7eb;
+background-color: white;
+box-shadow:4px 4px 3px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+opacity: .5;
+overflow: hidden;
+border-radius: 1rem;
+margin: 0 auto;
+margin-top: 1.5rem;
+width: 70%;
+}
+
+/* 
+--tw-ring-offset-color: rgba(59,130,246,0.5);
+--tw-ring-offset-width: 0px;
+--tw-ring-offset-color: #fff;
+--tw-ring-color: rgba(59,130,246,0.5);
+--tw-ring-offset-shadow: 0 0 transparent;
+--tw-ring-shadow: 0 0 transparent;
+--tw-bg-opacity: 1;
+background-color: rgba(255,255,255,var(--tw-bg-opacity));  
+*/
+
+
+article button{
+  width: 110px;
+  height: 80px;
+  border: 2px solid #352E1E;
+  border-radius: 8px;
+  background-color: #F9BB5F;
+}

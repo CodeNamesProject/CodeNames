@@ -1,4 +1,5 @@
 import Card from '../components/Card'
+import './Game.css'
 const Game = () => {
     return (
         <div className="body">
@@ -92,6 +93,15 @@ const Game = () => {
                             <div className="rad-design"></div>
                             </label>
                         </div>
+                    </div>
+                    <div className="gamelog">
+                        <section>
+                            <p>Game log</p>
+                            
+                        </section>
+                        <section>
+                            
+                        </section>
                     </div>
                 </aside>
             </main>
