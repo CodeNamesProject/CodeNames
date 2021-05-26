@@ -1,78 +1,51 @@
-import React, { Component } from 'react'
-import Button from '../components/Button'
 import Header from '../components/Header'
+import { useHistory } from 'react-router-dom';
 
-class Signup extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            firstname: '',
-            lastname: '',
-            username: '',
-            email: '',
-            password: ''
-        }
-    }
-
-    handleSubmit = (event) => {
-        alert("Signed up")
-        event.preventDefault()
-        const data = this.state
-        console.log(data) 
-    }
-    handleInputChange = (event) => {
-        event.preventDefault()
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
-    render(){
-        const {firstname, lastname, username, email, password} = this.state
+const Signup = () => {
+    const history = useHistory();
+    const handleClick = () => history.push('/login');
     return (
         <div className="box">
-            <form onSubmit={this.handleSubmit}>
+            <form>
                 <Header title="Sign up" size={75} family={'Thasadith'} />
                 <div className="content">
                     <div>
                         <label>First Name</label>
                         <br/>
-                        <input type='text' className='input' value={firstname} name='firstname' onChange={this.handleInputChange}  />
+                        <input type='text' className='input' name='firstname' />
                     </div>
                     <br/>
                     <div>
                         <label>Last Name</label>
                         <br/>
-                        <input type='text' className='input' value={lastname} name='lastname' onChange={this.handleInputChange} />
+                        <input type='text' className='input' name='lastname' />
                     </div>
                     <br/>
                     <div>
                         <label>User Name</label>
                         <br/>
-                        <input type='text' className='input' value={username} name='username' onChange={this.handleInputChange}/>
+                        <input type='text' className='input' name='username' />
                     </div>
                     <br/>
                     <div>
                         <label>Email</label>
                         <br/>
-                        <input type='email' className='input' value={email} name='email' onChange={this.handleInputChange}/>
+                        <input type='email' className='input' name='email' />
                     </div>
                     <br/>
                     <div>
                         <label>Password</label>
                         <br/>
-                        <input type='password' className='input' value={password} name='password' onChange={this.handleInputChange}/>
+                        <input type='password' className='input' name='password' />
                     </div>
                 </div>
                 <br/>
-                <button className='btn' style={{width:250}}>Sign up</button>
+                <button className='btn' style={{width:250}} onClick={handleClick}>Sign up</button>
                 <hr/>
-                <Button text='Redirect to Login page' width={250} nav="/login" />
             </form>
         </div>
         
     )
 }
-}
-
 
 export default Signup

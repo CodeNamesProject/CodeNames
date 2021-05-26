@@ -18,8 +18,16 @@ const Game = () => {
                                 </div>
                             </div>
                             <div className="player1">
-                                <h6>Operative</h6>
-                                <h6>Spymaster</h6>
+                                <label className="rad-label">
+                                <h6 className="rad-text">Operative</h6> 
+                                <input type="radio" className="rad-input" name="player1" value="operative" />
+                                <div className="rad-design"></div>
+                                </label>
+                                <label className="rad-label">
+                                <h6 className="rad-text">Spymaster</h6>
+                                <input type="radio" className="rad-input" name="player1" value="spymaster" />
+                                <div className="rad-design"></div>
+                                </label>
                             </div>
                     </div>
                 </nav>
@@ -73,8 +81,16 @@ const Game = () => {
                             </div>
                         </div>
                         <div className="player2">
-                            <h6>Operative</h6>
-                            <h6>Spymaster</h6>
+                            <label className="rad-label">
+                            <h6 className="rad-text">Operative</h6> 
+                            <input type="radio" className="rad-input" name="player2" value="operative" />
+                            <div className="rad-design"></div>
+                            </label>
+                            <label className="rad-label">
+                            <h6 className="rad-text">Spymaster</h6>
+                            <input type="radio" className="rad-input" name="player2" value="spymaster" />
+                            <div className="rad-design"></div>
+                            </label>
                         </div>
                     </div>
                 </aside>

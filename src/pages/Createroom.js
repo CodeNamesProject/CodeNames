@@ -45,7 +45,7 @@ const Createroom = () => {
                     <option>7 min</option>
                 </select>
 
-                <Button text={"Confirm"} width={200} nav={"/gameroom"}/>
+                <Button text={"Confirm"} width={200} nav={"/game"}/>
             </form>
         </div>
     )

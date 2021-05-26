@@ -138,96 +138,8 @@ li{
   background-color: #46497D;
   padding: 16px;
 }
-/* /Account */
+/* Account */
 
-/* Game room */
-.player{
-  float: left;
-}
-.username{
-  float: right;
-}
-
-.team {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding-top: 50px;
-  grid-gap: 50px;
-
-}
-
-.dropbtn {
-  background-color: #46497D;
-  border-radius: 10px;
-  color: white;
-  padding: 10px;
-  width: 100px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  right: 0;
-  display: none;
-  position: absolute;
-  color: #FFFFFF;
-  background-color: purple;
-  min-width: 200px;
-  min-height: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-.gameroombtn{
-  border-radius: 5px;
-  background-color: #282c34;
-  color: aliceblue;
-  line-height: 20px;
-  position: center;
-}
-
-.team{
-  color: #FFFFFF;
-}
-
-.team1{
-  background-color: #46497D;
-}
-
-.team2{
-  background-color: #46497D;
-}
-.confirm{
-  margin: auto;
-  position: center;
-}
-
-
-/* /GameRoom*/
 
 /* Game*/
 /*header,
@@ -279,7 +191,7 @@ footer {
 /* Card 1 */
 .Team1{
   background-color: #981414;
-  color: #D4462A;
+  /*color: #D4462A;*/
   border-radius: 6px;
   box-shadow:22px 22px 25px 22px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   font-family: Thasadith;
@@ -293,6 +205,7 @@ footer {
   align-items: center;
 }
 nav img{
+  margin-top: 5px;
   border-radius: 6px;
   box-shadow: 0px 15px 10px 0px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
@@ -309,12 +222,62 @@ nav img{
 .player1 h6{
   font-size: 13px;
   align-self: flex-start;
+  color: #D4462A;
 }
+
+/* Radio button */
+.rad-label {
+  display: flex;
+  cursor: pointer;
+}
+.rad-text{
+  margin-right: 10px;
+}
+.rad-label:hover,
+.rad-label:focus-within {
+  background: hsla(0, 0%, 80%, .14);
+}
+
+.rad-input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 17px;
+  height: 17px;
+  border-radius: 100px;
+  background: #46497D;
+}
+
+.rad-design::before {
+  content: '';
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.0);
+  transition: .3s;
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+
+.rad-input:checked~.rad-text {
+  color: hsl(0, 0%, 40%);
+}
+/* Radio button */
+
 /* Card 1 */
+
 /* Card 2 */
 .Team2{
   background-color: #0B7C9C;
-  color: #10B4E2;
+  /*color: #10B4E2;*/
   border-radius: 6px;
   box-shadow:22px 22px 25px 22px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   font-family: Thasadith;
@@ -327,6 +290,7 @@ nav img{
   align-items: center;
 }
 aside img{
+  margin-top: 5px;
   border-radius: 6px;
   box-shadow: 0px 15px 10px 0px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
@@ -343,6 +307,7 @@ aside img{
 .player2 h6{
   font-size: 13px;
   align-self: flex-start;
+  color: #10B4E2;
 }
 /* Card 2 */
 
@@ -353,5 +318,4 @@ article button{
   border-radius: 8px;
   background-color: #F9BB5F;
 }
-
 /* Game*/
