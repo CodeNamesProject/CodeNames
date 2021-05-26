@@ -157,11 +157,14 @@ footer {
   min-width: 1000px;
   height: 100%;
   margin: -20px 0;
-  background-image: url(bluedashed.jpg);
+  /*background-image: url(red_cover.jpg);*/
+  /*background: radial-gradient(circle at 50% 50%, rgb(231, 102, 60) 0%, rgb(72, 12, 2) 100%);*/
+  background: radial-gradient(circle at 50% 50%, rgb(166, 53, 8) 0%, rgb(72, 12, 2) 100%);
+
 }
 
 .h {
-  height: 60px;
+  height: 80px;
   color:white;
 }
 
