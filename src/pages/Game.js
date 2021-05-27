@@ -1,10 +1,73 @@
+import React, { Component } from 'react'
 import Card from '../components/Card'
+import posed from 'react-pose';
+import { RiUser3Fill } from "react-icons/ri";
+import { VscSmiley } from "react-icons/vsc"
+import { ImExit } from "react-icons/im";
 import './Game.css'
-const Game = () => {
+
+const Animation = posed.div({
+    visible : {
+        opacity : 1
+    },
+    hidden : {
+        opacity : 0
+    }
+});
+const Animation2 = posed.div({
+    visible2 : {
+        opacity : 1
+    },
+    hidden2 : {
+        opacity : 0
+    }
+});
+class Game extends Component {
+    state = {
+        visible : false
+    }
+    state2 = {
+        visible2 : false
+    }
+    changeVisibility = (e) => {
+        this.setState({
+            visible: !this.state.visible
+        })
+    }
+    
+    changeVisibility2 = (e) => {
+        this.setState({
+            visible2: !this.state.visible2
+        })
+    }
+    render(){
+        const {visible, visible2} = this.state;
     return (
         <div className="body">
             <header className="h">
-                Header
+                <div className="dropdown">
+                    <div>
+                        <button className="btn btn1" onClick={this.changeVisibility}>Players<RiUser3Fill className="icon"/></button>
+                        <Animation pose = {visible ? "visible" : "hidden"}>
+                            <div className="subbtn">
+                                <h4>players in this room:</h4>
+                                <h4>user1, user2, user3, user4 </h4>
+                            </div>
+                        </Animation>
+                    </div>
+                    <div>
+                        <button className="btn btn1" onClick={this.changeVisibility2}><VscSmiley className="icon"/>username</button>
+                        <Animation2 pose = {visible2 ? "visible2" : "hidden2"}>
+                            <div className="subbtn">
+                                <div>
+                                    <a href="/homepage" className="leave">
+                                        <h3><ImExit className="icon"/>Leave the room</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </Animation2>
+                    </div>
+                </div>
             </header>
 
             <main>
@@ -21,12 +84,12 @@ const Game = () => {
                             <div className="player1">
                                 <label className="rad-label">
                                 <h6 className="rad-text">Operative</h6> 
-                                <input type="radio" className="rad-input" name="player1" value="operative" />
+                                <input type="radio" className="rad-input" name="player" value="operative" />
                                 <div className="rad-design"></div>
                                 </label>
                                 <label className="rad-label">
                                 <h6 className="rad-text">Spymaster</h6>
-                                <input type="radio" className="rad-input" name="player1" value="spymaster" />
+                                <input type="radio" className="rad-input" name="player" value="spymaster" />
                                 <div className="rad-design"></div>
                                 </label>
                             </div>
@@ -84,12 +147,12 @@ const Game = () => {
                         <div className="player2">
                             <label className="rad-label">
                             <h6 className="rad-text">Operative</h6> 
-                            <input type="radio" className="rad-input" name="player2" value="operative" />
+                            <input type="radio" className="rad-input" name="player" value="operative" />
                             <div className="rad-design"></div>
                             </label>
                             <label className="rad-label">
                             <h6 className="rad-text">Spymaster</h6>
-                            <input type="radio" className="rad-input" name="player2" value="spymaster" />
+                            <input type="radio" className="rad-input" name="player" value="spymaster" />
                             <div className="rad-design"></div>
                             </label>
                         </div>
@@ -110,6 +173,7 @@ const Game = () => {
             </footer>
         </div>
     )
+    }
 }
 
 export default Game

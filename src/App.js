@@ -16,7 +16,6 @@ function App() {
           <Route path="/account" component={Account}/>
           <Route path="/createroom" component={Createroom}/>
           <Route path="/homepage" component={Homepage} />
-          <Route path="/game" component={Game} />
           <Route path="/login" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/" exact component={Mainpage} />

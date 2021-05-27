@@ -1,10 +1,10 @@
-header,
+/* header,
 nav,
 article,
 aside,
 footer {
     border: 1px solid #000;
-}
+} */
 
 .body{
   display: flex;
@@ -15,15 +15,51 @@ footer {
   margin: -20px 0;
   /*background-image: url(red_cover.jpg);*/
   /*background: radial-gradient(circle at 50% 50%, rgb(231, 102, 60) 0%, rgb(72, 12, 2) 100%);*/
-  background: radial-gradient(circle at 50% 50%, rgb(166, 53, 8) 0%, rgb(72, 12, 2) 100%);
+  background: radial-gradient(circle at 50% 50%, #698DD0 0%, #3A65B7 100%); 
 
 }
 
-.h {
-  height: 80px;
-  color:white;
+.h{
+    height: 100px;
+    color:white;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    justify-content: center;
+}
+.dropdown{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.leave{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  margin: 6px 15px;
+}
+.btn1{
+  width: 120px;
+  border-radius: 20px;
+}
+.icon{
+  display: inline;
+}
+.subbtn{
+  border: 1px solid #C5C6DE;
+  color: black;
+  background: #C5C6DE;
+  border-radius: 6px;
+  margin-top: 5px;
+  padding: 3px;
+  font-size: 15px;
+  font-family: Varela;
 }
 
+.subbtn a:hover{
+  color:#7D4675;
+}
 main {
   flex: auto;
   display: flex;
@@ -73,7 +109,7 @@ nav img{
   font-size: 25px;
 }
 .player1{
-  height: 80px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -159,7 +195,7 @@ aside img{
   font-size: 25px;
 }
 .player2{
-  height: 80px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
