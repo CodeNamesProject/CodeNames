@@ -75,19 +75,27 @@ input:focus {
   right: 16px;
   font-size: 18px;
 }
-.rules{
-  /*position: relative;
-  margin: 5% 28%;
-  padding: 10px;
-  width: 600px;
-  object-position: center top;*/
-  margin-top: 150px;
-  opacity: 0.75;
-  color: #FFFFFF;
-  font-size: 18px;
+.rule{
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 60px;
+  border: 1px solid black;
+  font-size: 20px;
   background-color:#260023;
+  opacity: .7;
+  color: #FFFFFF;
   box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   border-radius: 6px;
+
+}
+.rules{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 15px 0;
+  
 }
 /* Homepage */
 /* Create room */
