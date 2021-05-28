@@ -114,6 +114,7 @@ input:focus {
 }
 .filter-switch-item input:checked + label {
   color: inherit;
+  background-color: #46497D;
 }
 .filter-switch-item input:not(:checked) + label {
   --bg-opacity: 0;
@@ -121,6 +122,9 @@ input:focus {
 }
 .sr-only{
   -webkit-appearance: none;
+}
+.languages{
+  background-color: #260023;
 }
 li{
   display: inline;
