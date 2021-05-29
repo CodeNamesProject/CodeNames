@@ -71,36 +71,36 @@ class Game extends Component {
                     </div>
                 </nav>
                 <article>
-                    <div className="cardbox" style={{marginTop:60}}>
-                        <div>
+                    <div className="card-box" style={{marginTop:60}}>
+                        <div className="card-line">
                         <Card word="Planet" />
                         <Card word="England" />
                         <Card word="Cat" />
                         <Card word="Dress" />
                         <Card word="Pie" />
                         </div>
-                        <div>
+                        <div className="card-line">
                         <Card word="Frost" />
                         <Card word="Cell" />
                         <Card word="Server" />
                         <Card word="Apple" />
                         <Card word="Mug" />
                         </div>
-                        <div>
+                        <div className="card-line">
                         <Card word="Washington" />
                         <Card word="War" />
                         <Card word="Trip" />
                         <Card word="Wel" />
                         <Card word="Temple" />
                         </div>
-                        <div>
+                        <div className="card-line">
                         <Card word="Point" />
                         <Card word="Beat" />
                         <Card word="Ground" />
                         <Card word="Post" />
                         <Card word="Cross" />
                         </div>
-                        <div>
+                        <div className="card-line">
                         <Card word="Hotel" />
                         <Card word="Italy" />
                         <Card word="Wave" />
