@@ -103,14 +103,18 @@ input:focus {
 /* Create room */
 .crroom{
   background-color:#260023;
+  opacity: 0.9;
   box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   border-radius: 6px;
   line-height: 6.4em;
   margin-top: 6%;
-  width: 100%;
+  width: 40%;
   align-items: center;
+  margin: 0 auto 0 auto;
   font-size: 18px;
+  border: #260023 1px solid;
 }
+
 .filter-switch label {
   cursor: pointer;
 }
@@ -127,6 +131,12 @@ input:focus {
 }
 .languages{
   background-color: #260023;
+}
+select{
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #000;
+  padding: 2px;
 }
 li{
   display: inline;

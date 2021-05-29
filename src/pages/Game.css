@@ -15,7 +15,6 @@ footer {
   min-width: 1000px;
   height: 100%;
   margin: -20px 0;
-  /* background-image: url(game_cover.jpg); */
 }
 .h{
     height: 60px;
@@ -243,7 +242,7 @@ width: 70%;
 article button{
   width: 110px;
   height: 80px;
-  border: 2px solid #352E1E;
+  border: 1px solid #584d32;
   border-radius: 8px;
   background-color: #ffca7b;
 }
