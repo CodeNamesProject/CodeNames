@@ -71,7 +71,7 @@ class Game extends Component {
                     </div>
                 </nav>
                 <article>
-                    <div className="cardbox">
+                    <div className="cardbox" style={{marginTop:60}}>
                         <div>
                         <Card word="Planet" />
                         <Card word="England" />
@@ -108,12 +108,12 @@ class Game extends Component {
                         <Card word="Soul" />
                         </div>
                     </div>
-                    <br/> <br/>
+                    <br/>
                     <div className="clue">
                         <div>
                         <input type="text" placeholder="Type your clue here" className="input-clue"/> 
                         </div>
-                        &nbsp;
+                        &nbsp; &nbsp;
                         <div className="dropdown-container">
                         <select>
                             <option value="1">1</option>
@@ -167,9 +167,6 @@ class Game extends Component {
                     </div>
                 </aside>
             </main>
-            <footer>
-               
-            </footer>
         </div>
     )
     }
