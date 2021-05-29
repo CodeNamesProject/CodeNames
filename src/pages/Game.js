@@ -1,77 +1,52 @@
 import React, { Component } from 'react'
 import Card from '../components/Card'
-import posed from 'react-pose';
+import {Dropdown, NavDropdown} from "react-bootstrap";
 import { RiUser3Fill } from "react-icons/ri";
 import { VscSmiley } from "react-icons/vsc"
 import { ImExit } from "react-icons/im";
 import './Game.css'
 
-const Animation = posed.div({
-    visible : {
-        opacity : 1
-    },
-    hidden : {
-        opacity : 0
-    }
-});
-const Animation2 = posed.div({
-    visible2 : {
-        opacity : 1
-    },
-    hidden2 : {
-        opacity : 0
-    }
-});
 class Game extends Component {
-    state = {
-        visible : false
-    }
-    state2 = {
-        visible2 : false
-    }
-    changeVisibility = (e) => {
-        this.setState({
-            visible: !this.state.visible
-        })
-    }
-    
-    changeVisibility2 = (e) => {
-        this.setState({
-            visible2: !this.state.visible2
-        })
-    }
     render(){
-        const {visible, visible2} = this.state;
     return (
         <div className="body">
             <header className="h">
                 <div className="dropdown">
                     <div>
-                        <button className="btn btn1" onClick={this.changeVisibility}>Players<RiUser3Fill className="icon"/></button>
-                        <Animation pose = {visible ? "visible" : "hidden"}>
-                            <div className="subbtn">
-                                <h4>players in this room:</h4>
-                                <h4>user1, user2, user3, user4 </h4>
-                            </div>
-                        </Animation>
+                        <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            Players<RiUser3Fill className="icon"/>
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu className="users-btn">
+                        Players in the room:
+                            <Dropdown.Item className="red">
+                            Team 1: user1, user2
+                            </Dropdown.Item>
+                            <Dropdown.Item className="blue">
+                            Team 2: user3, user4
+                            </Dropdown.Item>
+                        </Dropdown.Menu>
+                        </Dropdown> 
                     </div>
                     <div>
-                        <button className="btn btn1" onClick={this.changeVisibility2}><VscSmiley className="icon"/>username</button>
-                        <Animation2 pose = {visible2 ? "visible2" : "hidden2"}>
-                            <div className="subbtn">
-                                <div>
-                                    <a href="/homepage" className="leave">
-                                        <h3><ImExit className="icon"/>Leave the room</h3>
-                                    </a>
-                                </div>
-                            </div>
-                        </Animation2>
+                        <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            <VscSmiley className="icon"/>username
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <div className="invite-btn"> Invite players by sending them this link: </div>
+                            <div> <input type="url"/> </div>
+                            <NavDropdown.Divider />
+                            <Dropdown.Item href="/homepage" style={{textAlign: 'center'}} className="leave-btn"><ImExit className="icon"/>Leave the room</Dropdown.Item>
+                        </Dropdown.Menu>
+                        </Dropdown> 
                     </div>
                 </div>
             </header>
 
             <main>
                 <nav>
+                <div className="teams-font">Team 1</div>
                     <div className="Team1">
                             <div className="up1">
                                 <div>
@@ -133,8 +108,32 @@ class Game extends Component {
                         <Card word="Soul" />
                         </div>
                     </div>
+                    <br/> <br/>
+                    <div className="clue">
+                        <div>
+                        <input type="text" placeholder="Type your clue here" className="input-clue"/> 
+                        </div>
+                        &nbsp;
+                        <div className="dropdown-container">
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        </div>
+                    </div>
+                    <br/>
+                    <button className='clue-btn'>Give Clue</button>
                 </article>
                 <aside>
+                <div className="teams-font">Team 2</div>
                     <div className="Team2">
                         <div className="up2">
                             <div className="score2">
@@ -163,13 +162,13 @@ class Game extends Component {
                             
                         </section>
                         <section>
-                            
+                        
                         </section>
                     </div>
                 </aside>
             </main>
             <footer>
-                Footer
+               
             </footer>
         </div>
     )

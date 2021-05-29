@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 /* header,
 nav,
 article,
 aside,
 footer {
     border: 1px solid #000;
-} */
+}  */
 
 .body{
   display: flex;
@@ -13,18 +15,12 @@ footer {
   min-width: 1000px;
   height: 100%;
   margin: -20px 0;
-  /*background-image: url(red_cover.jpg);*/
-  /*background: radial-gradient(circle at 50% 50%, rgb(231, 102, 60) 0%, rgb(72, 12, 2) 100%);*/
-  background: radial-gradient(circle at 50% 50%, #698DD0 0%, #3A65B7 100%); 
-
+  /* background-image: url(game_cover.jpg); */
 }
-
 .h{
-    height: 100px;
+    height: 60px;
     color:white;
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     justify-content: center;
 }
 .dropdown{
@@ -34,32 +30,35 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.leave{
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  margin: 6px 15px;
+input[type=url]{
+  border-radius: 15px;
+  border: 1px solid rgb(112, 112, 112);
+  box-shadow: 1px 1px 3px #000;
 }
-.btn1{
-  width: 120px;
-  border-radius: 20px;
+.users-btn{
+  font-family: 'Thasadith', sans-serif;
+  text-align: center;
+}
+.red:hover{
+  color: #981414 ;
+}
+.blue:hover{
+  color: #0B7C9C ;
+}
+.invite-btn{
+  font-size: 11px;
+  text-align: center;
+  color: #0073CB;
+  font-family: 'Play', sans-serif;
+
+}
+.leave-btn:hover{
+  color: #0073CB;
 }
 .icon{
   display: inline;
 }
-.subbtn{
-  border: 1px solid #C5C6DE;
-  color: black;
-  background: #C5C6DE;
-  border-radius: 6px;
-  margin-top: 5px;
-  padding: 3px;
-  font-size: 15px;
-  font-family: Varela;
-}
 
-.subbtn a:hover{
-  color:#7D4675;
-}
 main {
   flex: auto;
   display: flex;
@@ -84,9 +83,13 @@ footer {
   height: 59px;
 }
 /* Card 1 */
+.teams-font{
+  font-size: 40px;
+  font-family: 'Thasadith', sans-serif;
+  color: #FFFFFF;
+}
 .Team1{
   background-color: #981414;
-  /*color: #D4462A;*/
   border-radius: 6px;
   box-shadow:7px 7px 4px 1px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   font-family: Thasadith;
@@ -228,22 +231,48 @@ margin-top: 1.5rem;
 width: 70%;
 }
 
-/* 
---tw-ring-offset-color: rgba(59,130,246,0.5);
---tw-ring-offset-width: 0px;
---tw-ring-offset-color: #fff;
---tw-ring-color: rgba(59,130,246,0.5);
---tw-ring-offset-shadow: 0 0 transparent;
---tw-ring-shadow: 0 0 transparent;
---tw-bg-opacity: 1;
-background-color: rgba(255,255,255,var(--tw-bg-opacity));  
-*/
-
-
 article button{
   width: 110px;
   height: 80px;
   border: 2px solid #352E1E;
   border-radius: 8px;
   background-color: #F9BB5F;
+}
+.clue{
+  display: flex;
+  justify-content: center;
+}
+.clue-btn{
+  width: 100px;
+  height: 40px;
+  border: 1px solid #009B29;
+  box-shadow: 1px 1px 3px #000;
+  border-radius: 10px;
+  background:#009B29; 
+  color: black;
+}
+
+.clue-btn:hover{
+  background:#00CC36; 
+}
+
+.input-clue{
+  width: 20em;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgb(112, 112, 112);
+  box-shadow: 1px 1px 3px #000;
+  padding: 10px;
+}
+
+.dropdown-container select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid rgb(112, 112, 112);
+  box-shadow: 1px 1px 3px #000;
+  border-radius: 5px;
+  padding: 2px 4px;
 }
