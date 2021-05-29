@@ -6,12 +6,14 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Createroom from './pages/Createroom'
 import Account from './pages/Account';
+import ChangePw from './pages/ChangePw';
 
 function App() {
   return (
     <Router>
       <div>
         <Switch>
+          <Route path="/changepw" exact component={ChangePw}/>
           <Route path="/game" exact component={Game}/>
           <Route path="/account" component={Account}/>
           <Route path="/createroom" component={Createroom}/>

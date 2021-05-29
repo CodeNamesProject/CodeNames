@@ -11,26 +11,23 @@ const Account = () => {
                         <MdAccountCircle size={80} style={{color: 'white',marginTop: '15'}}/>
                     </div>
                     <div>
-                        <label>Firstname &nbsp;</label>
-                        <input type='text' className='input'/>
+                        {/* <label>Firstname &nbsp;</label> */}
+                        <input type='text' className='input' placeholder='New Firstname...'/>
                     </div>
                     <br/>
                     <div>
-                        <label>Lastname &nbsp;</label>
-                        <input type='text' className='input'/>
+                        {/* <label>Lastname &nbsp;</label> */}
+                        <input type='text' className='input' placeholder='New Lastname...'/>
                     </div>
                     <br/>
                     <div>
-                        <label>Username &nbsp;</label>
-                        <input type='text' className='input'/>
+                        {/* <label>Username &nbsp;</label> */}
+                        <input type='text' className='input' placeholder='New Username...'/>
                     </div>
                     <br/>
-                    <div>
-                        <label>Password &nbsp;</label>
-                        <input type='text' className='input'/>
-                    </div>
+                    <Button text='Save' width={200} nav='/homepage' />
                     <br/>
-                    <Button text='Save' width={150} nav='/homepage' />
+                    <Button text='Change password' width={200} nav='/changepw' />
             </div>
         </form>    
     )
