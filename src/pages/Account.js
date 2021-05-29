@@ -6,7 +6,7 @@ const Account = () => {
     return(
         <form>
             <Header title=" Account" size={50} family={'Thasadith'} />
-            <div className="box" style={{marginTop: -15}}>
+            <div className="box" style={{marginTop: 5}}>
                     <div style={{display:'flex',justifyContent:'center'}}>
                         <MdAccountCircle size={80} style={{color: 'white',marginTop: '15'}}/>
                     </div>
