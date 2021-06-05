@@ -35,12 +35,6 @@ const Createroom = () => {
                         </li>
                     </ul>
                 </div>
-                <label style={{color:'white'}}>Timer &nbsp; &nbsp; </label>
-                <select>
-                    <option>3 min</option>
-                    <option>5 min</option>
-                    <option>7 min</option>
-                </select>
                 <Button text={"Confirm"} width={200} nav={"/game"}/>
             </form>
         </div>
