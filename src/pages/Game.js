@@ -30,20 +30,20 @@ class Game extends Component {
             <main>
                 <nav>
                 <div className="teams-font">Team 1</div>
-                    <div className="Team1">
-                            <div className="up1">
+                    <div className="Team-card" style={{background:'#981414'}}>
+                            <div className="up-part">
                                 <div>
                                 <img src="https://boardgametree.com/wp-content/uploads/2019/04/codenames-2.jpg" alt="character" width="110" />
                                 </div>
-                                <div className="score1">
+                                <div className="score">
                                 <h2>9</h2>
                                 </div>
                             </div>
-                            <div className="player1">
-                                <h6 className="rad-text">Operative</h6> 
+                            <div className="player">
+                                <h6 style={{color: '#cf6550'}}>Operative</h6> 
                                 <button className="join-btn">Join as Operative</button>
  
-                                <h6 className="rad-text">Spymaster</h6>
+                                <h6 style={{color: '#cf6550'}}>Spymaster</h6>
                                 <button className="join-btn">Join as Spymaster</button>
                             </div>
                     </div>
@@ -112,20 +112,20 @@ class Game extends Component {
                 </article>
                 <aside>
                 <div className="teams-font">Team 2</div>
-                    <div className="Team2">
-                        <div className="up2">
-                            <div className="score2">
+                    <div className="Team-card" style={{background: '#0B7C9C'}}>
+                        <div className="up-part">
+                            <div className="score">
                             <h2>9</h2>
                             </div>
                             <div>
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFKK_nMs2OLA0TZa9XsFD5XYnW2TIlISL9iOy6AgtT2QAUw41H_XxUGvtv0jhRAE8feLE&usqp=CAU" alt="character" width="110" />
                             </div>
                         </div>
-                        <div className="player2">
-                            <h6 className="rad-text">Operative</h6> 
+                        <div className="player">
+                            <h6 style={{color: '#5fc3df'}}>Operative</h6> 
                             <button className="join-btn">Join as Operative</button>
 
-                            <h6 className="rad-text">Spymaster</h6>
+                            <h6 style={{color: '#5fc3df'}}>Spymaster</h6>
                             <button className="join-btn">Join as Operative</button>
                         </div>
                     </div>

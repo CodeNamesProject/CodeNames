@@ -62,46 +62,27 @@ main > aside {
 footer {
   height: 59px;
 }
-/* Card 1 */
+/* Cards */
 .teams-font{
   font-size: 40px;
   font-family: 'Thasadith', sans-serif;
   color: #FFFFFF;
 }
-.Team1{
-  background-color: #981414;
+.Team-card{
   border-radius: 6px;
   box-shadow:7px 7px 4px 1px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   font-family: Thasadith;
   width: 75%;
   margin: 0 auto;
 }
-
-.up1{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-nav img{
-  margin-top: 5px;
-  border-radius: 6px;
-  box-shadow:4px 4px 3px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-}
-.score1{
+.score{
   color: #FFFFFF;
   font-size: 25px;
 }
-.player1{
-  height: 100px;
+.up-part{
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-left: 15px;
-}
-.player1 h6{
-  font-size: 13px;
-  align-self: flex-start;
-  color: #cf6550;
+  justify-content: space-around;
+  align-items: center;
 }
 .join-btn{
   border: none;
@@ -114,92 +95,30 @@ nav img{
   font-size: 12px;
   padding: 3px;
 }
-/* Radio button */
-.rad-label {
-  display: flex;
-  cursor: pointer;
-}
-.rad-text{
-  margin-right: 10px;
-}
-.rad-label:hover,
-.rad-label:focus-within {
-  background: hsla(0, 0%, 80%, .14);
-}
-
-.rad-input {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  z-index: -1;
-}
-
-.rad-design {
-  width: 17px;
-  height: 17px;
-  border-radius: 100px;
-  background: #46497D;
-}
-
-.rad-design::before {
-  content: '';
-  display: inline-block;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  background: hsl(0, 0%, 90%);
-  transform: scale(1.0);
-  transition: .3s;
-}
-
-.rad-input:checked+.rad-design::before {
-  transform: scale(0);
-}
-
-.rad-input:checked~.rad-text {
-  color: hsl(0, 0%, 40%);
-}
-/* Radio button */
-
-/* Card 1 */
-
-/* Card 2 */
-.Team2{
-  background-color: #0B7C9C;
-  border-radius: 6px;
-  box-shadow:7px 7px 4px 1px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-  font-family: Thasadith;
-  width: 75%;
-  margin: 0 auto;
-}
-.up2{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-aside img{
-  margin-top: 5px;
-  border-radius: 6px;
-  box-shadow:4px 4px 3px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
-}
-.score2{
-  color: #FFFFFF;
-  font-size: 25px;
-}
-.player2{
+.player{
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 15px;
 }
-.player2 h6{
+.player h6{
   font-size: 13px;
   align-self: flex-start;
-  color: #5fc3df;
+}
+/* Card 1 */
+nav img{
+  margin-top: 5px;
+  border-radius: 6px;
+  box-shadow:4px 4px 3px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 /* Card 2 */
-
+aside img{
+  margin-top: 5px;
+  border-radius: 6px;
+  box-shadow:4px 4px 3px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+/* Cards */
 .gamelog{
 -webkit-text-size-adjust: 100%;
 -webkit-tap-highlight-color: transparent;
