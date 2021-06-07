@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../components/Card'
 import {Dropdown, NavDropdown} from "react-bootstrap";
-import { RiUser3Fill } from "react-icons/ri";
 import { VscSmiley } from "react-icons/vsc"
 import { ImExit } from "react-icons/im";
 import './Game.css'
@@ -12,22 +11,6 @@ class Game extends Component {
         <div className="body">
             <header className="h">
                 <div className="dropdown">
-                    <div>
-                        <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            Players<RiUser3Fill className="icon"/>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu className="users-btn">
-                        Players in the room:
-                            <Dropdown.Item className="red">
-                            Team 1: user1, user2
-                            </Dropdown.Item>
-                            <Dropdown.Item className="blue">
-                            Team 2: user3, user4
-                            </Dropdown.Item>
-                        </Dropdown.Menu>
-                        </Dropdown> 
-                    </div>
                     <div>
                         <Dropdown>
                         <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -57,16 +40,11 @@ class Game extends Component {
                                 </div>
                             </div>
                             <div className="player1">
-                                <label className="rad-label">
                                 <h6 className="rad-text">Operative</h6> 
-                                <input type="radio" className="rad-input" name="player" value="operative" />
-                                <div className="rad-design"></div>
-                                </label>
-                                <label className="rad-label">
+                                <button className="join-btn">Join as Operative</button>
+ 
                                 <h6 className="rad-text">Spymaster</h6>
-                                <input type="radio" className="rad-input" name="player" value="spymaster" />
-                                <div className="rad-design"></div>
-                                </label>
+                                <button className="join-btn">Join as Spymaster</button>
                             </div>
                     </div>
                 </nav>
@@ -144,16 +122,11 @@ class Game extends Component {
                             </div>
                         </div>
                         <div className="player2">
-                            <label className="rad-label">
                             <h6 className="rad-text">Operative</h6> 
-                            <input type="radio" className="rad-input" name="player" value="operative" />
-                            <div className="rad-design"></div>
-                            </label>
-                            <label className="rad-label">
+                            <button className="join-btn">Join as Operative</button>
+
                             <h6 className="rad-text">Spymaster</h6>
-                            <input type="radio" className="rad-input" name="player" value="spymaster" />
-                            <div className="rad-design"></div>
-                            </label>
+                            <button className="join-btn">Join as Operative</button>
                         </div>
                     </div>
                     <div className="gamelog">

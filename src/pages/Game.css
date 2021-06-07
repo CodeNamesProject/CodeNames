@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Thasadith:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
-/* header,
-nav,
-article,
-aside,
-footer {
-    border: 1px solid #000;
-}  */
-
 .body{
   display: flex;
   flex-direction: column;
@@ -30,19 +22,8 @@ footer {
   align-items: center;
 }
 input[type=url]{
-  border-radius: 15px;
   border: 1px solid rgb(112, 112, 112);
   box-shadow: 1px 1px 3px #000;
-}
-.users-btn{
-  font-family: 'Thasadith', sans-serif;
-  text-align: center;
-}
-.red:hover{
-  color: #981414 ;
-}
-.blue:hover{
-  color: #0B7C9C ;
 }
 .invite-btn{
   font-size: 11px;
@@ -92,7 +73,7 @@ footer {
   border-radius: 6px;
   box-shadow:7px 7px 4px 1px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   font-family: Thasadith;
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -122,7 +103,17 @@ nav img{
   align-self: flex-start;
   color: #cf6550;
 }
-
+.join-btn{
+  border: none;
+  color: white;
+  width: 100px;
+  background: #46497D;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  font-family: Thasadith;
+  font-size: 12px;
+  padding: 3px;
+}
 /* Radio button */
 .rad-label {
   display: flex;
@@ -175,11 +166,10 @@ nav img{
 /* Card 2 */
 .Team2{
   background-color: #0B7C9C;
-  /*color: #10B4E2;*/
   border-radius: 6px;
   box-shadow:7px 7px 4px 1px rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
   font-family: Thasadith;
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 .up2{
