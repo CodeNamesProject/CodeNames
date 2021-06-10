@@ -15,9 +15,8 @@ const Homepage = () => {
                     <li>How to play:</li>
                     <li>1. Click on the CREATE ROOM button.</li>
                     <li>2. Select the preferred game settings and start the game.</li> 
-                    <li>3. Connect with your friends using your favorite audio or video chat.</li> 
-                    <li>4. Share the room URL with your friends.</li> 
-                    <li>5. Enjoy the game!</li>
+                    <li>3. Share the room URL with your friends.</li> 
+                    <li>4. Enjoy the game!</li>
                 </ol>
             </div>
         </div>
